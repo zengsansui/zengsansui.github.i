@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tests on Arielle</title>
+    <link>https://zengsansui.github.io/test/</link>
+    <description>Recent content in Tests on Arielle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zn-Hans</language>
+    <lastBuildDate>Wed, 19 Jun 2019 14:11:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://zengsansui.github.io/test/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MySQL 是怎样运行的-第三部分</title>
+      <link>https://zengsansui.github.io/test/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Wed, 19 Jun 2019 14:11:00 +0800</pubDate>
+      
+      <guid>https://zengsansui.github.io/test/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%9F%BA%E7%A1%80/</guid>
+      <description>视频播放原理 音视频技术 封装技术 视频压缩编码技术 音频压缩编码技术 流媒体协议技术 视频播放器播放一个视频文件，需要经过以下几个步骤：解协议，解封装，解码音视频，音视频同步。如果播放本地文件则不需要解协议。 解协议：将流媒体协议的数据，解析为标准的相应的封装格式数据。解协议的过程中会除掉信令数据（这些信令数据包含对播放的控制，或者对网络状态的描写）而只保留音视频数据。如RTMP协议传输的数据，经过解协议操作</description>
+    </item>
+    
+  </channel>
+</rss>
