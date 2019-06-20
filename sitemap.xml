@@ -15,23 +15,6 @@
   </url>
   
   <url>
-    <loc>https://zengsansui.github.io/categories/mysql/</loc>
-    <lastmod>2019-06-19T14:11:00+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://zengsansui.github.io/tags/mysql/</loc>
-    <lastmod>2019-06-19T14:11:00+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://zengsansui.github.io/test/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2019-06-19T14:11:00+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://zengsansui.github.io/tags/</loc>
     <lastmod>2019-06-19T14:11:00+08:00</lastmod>
     <priority>0</priority>
@@ -41,6 +24,23 @@
     <loc>https://zengsansui.github.io/test/</loc>
     <lastmod>2019-06-19T14:11:00+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zengsansui.github.io/tags/video/</loc>
+    <lastmod>2019-06-19T14:11:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zengsansui.github.io/categories/video/</loc>
+    <lastmod>2019-06-19T14:11:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zengsansui.github.io/test/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2019-06-19T14:11:00+08:00</lastmod>
   </url>
   
   <url>
