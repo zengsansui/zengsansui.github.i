@@ -6,10 +6,37 @@
     <description>Recent content in Posts on Arielle</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Sun, 23 Jun 2019 12:13:30 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 30 Jun 2019 17:38:46 +0800</lastBuildDate>
     
 	<atom:link href="https://zengsansui.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>工厂方法模式</title>
+      <link>https://zengsansui.github.io/posts/%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Sun, 30 Jun 2019 17:38:46 +0800</pubDate>
+      
+      <guid>https://zengsansui.github.io/posts/%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/</guid>
+      <description>工厂方法模式 定义： 定义一个用于创建对象的接口，让子类决定将哪一个类实例化。工厂方法模式让一个类的实例延迟到子类。工厂方法模式又简称工厂模式，又可称作虚拟构造器模式或者多态工厂模式。工厂方法模式是一类创建型模式。 结构图 工厂方法模式提供一个抽象工厂接口来声明抽象工厂方法，而由其子类来具体实现工厂方法，创建具体的产品对象。工厂方法结构如果所示： Product(抽象产品)：它是定义产品的接口，是工厂方法模</description>
+    </item>
+    
+    <item>
+      <title>抽象工厂模式</title>
+      <link>https://zengsansui.github.io/posts/%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Sun, 30 Jun 2019 17:38:34 +0800</pubDate>
+      
+      <guid>https://zengsansui.github.io/posts/%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</guid>
+      <description>抽象工厂模式 定义 产品等级结构定义 产品等级结构即产品的继承结构，如一个抽象类是电视剧，其子类有海尔电视机、海信电视机、TCL电视机，则抽象电视机与具体品牌的电视机之间构成了一个产品等级结构，抽象电视机是父类，而具体品牌的电视机是其子类。 产品族定义 在抽象工厂模式中，产品族是指由同一个工厂生产的，位于不同产品等级结构中的一组产品，如海尔电器工厂生产的海尔电视机、海尔电冰箱，海尔电视机位于电视机产品等级结</description>
+    </item>
+    
+    <item>
+      <title>简单工厂模式</title>
+      <link>https://zengsansui.github.io/posts/%E7%AE%80%E5%8D%95%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Sun, 30 Jun 2019 17:38:22 +0800</pubDate>
+      
+      <guid>https://zengsansui.github.io/posts/%E7%AE%80%E5%8D%95%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</guid>
+      <description>简单工厂模式 定义 简单工厂模式：定义一个工厂类，它可以根据参数的不同返回不同类型的实例，被创建的实例通常都具有共同的父类。因为在简单工厂模式中用于创建实例的方法是静态方法，因此简单工厂又被称为静态工厂方法，属于创建型模式。 简单工厂的要点：当你需要创建什么，只需要传入一个正确的参数，就可以获取你做需要的对象，而无需知道其创建细节。 结构图 Factory(工厂角色)：工厂角色即工厂类，是简单工厂模式的核心</description>
+    </item>
     
     <item>
       <title>音视频基础</title>
