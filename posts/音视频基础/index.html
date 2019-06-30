@@ -12,9 +12,9 @@
   <meta property="og:title" content="音视频基础" />
 <meta property="og:description" content="视频播放原理 音视频技术 封装技术 视频压缩编码技术 音频压缩编码技术 流媒体协议技术 视频播放器播放一个视频文件，需要经过以下几个步骤：解协议，解封装，解码音视频，音视频同步。如果播放本地文件则不需要解协议。 解协议：将流媒体协议的数据，解析为标准的相应的封装格式数据。解协议的过程中会除掉信令数据（这些信令数据包含对播放的控制，或者对网络状态的描写）而只保留音视频数据。如RTMP协议传输的数据，经过解协议操作" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://zengsansui.github.io/test/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%9F%BA%E7%A1%80/" />
-<meta property="article:published_time" content="2019-06-19T14:11:00&#43;08:00"/>
-<meta property="article:modified_time" content="2019-06-19T14:11:00&#43;08:00"/>
+<meta property="og:url" content="https://zengsansui.github.io/posts/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%9F%BA%E7%A1%80/" />
+<meta property="article:published_time" content="2019-06-23T12:13:30&#43;08:00"/>
+<meta property="article:modified_time" content="2019-06-23T12:13:30&#43;08:00"/>
 
 
   <title>
@@ -23,7 +23,7 @@
   
   </title>
 
-  <link rel="canonical" href="https://zengsansui.github.io/test/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%9F%BA%E7%A1%80/">
+  <link rel="canonical" href="https://zengsansui.github.io/posts/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%9F%BA%E7%A1%80/">
 
   
   
@@ -273,7 +273,7 @@
 
   <ul class="post-meta li-x mt-1">
     
-      <li>Jun 19, 2019</li>
+      <li>Jun 23, 2019</li>
     
 
     
@@ -301,7 +301,7 @@
 
 <p>视频播放器播放一个视频文件，需要经过以下几个步骤：解协议，解封装，解码音视频，音视频同步。如果播放本地文件则不需要解协议。</p>
 
-<p><img src="https://img-blog.csdn.net/20140201120523046?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbGVpeGlhb2h1YTEwMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="音视频播放过程" /></p>
+<p><img src="https://zengsansui.github.io/images/ffmpeg/playprocess.jpg" alt="音视频播放过程" /></p>
 
 <ul>
 <li><strong>解协议</strong>：将流媒体协议的数据，解析为标准的相应的封装格式数据。解协议的过程中会除掉信令数据（这些信令数据包含对播放的控制，或者对网络状态的描写）而只保留音视频数据。如RTMP协议传输的数据，经过解协议操作后，输出FLV格式的数据。</li>
@@ -449,7 +449,7 @@ V= 0.615*R-0.515*G-0.100*B
 <ul>
 <li>原理
 H.264原始码流(又称为裸流)是一个由一个一个NALU组成的。结构如下：
-<img src="https://img-blog.csdn.net/20160118001549018" alt="音视频播放过程" /></li>
+<img src="https://zengsansui.github.io/images/ffmpeg/H.264原始码流.jpg" alt="H.264原始码流" /></li>
 </ul>
 
 <p>其中每个NALU之间通过startcode（起始码）进行分割。起始码分为两种：0x000001(3byte)或者0x00000001(4byte)。如果NALU对应的slice为一帧的就开始用0x00000001，否则就用0x000001。H.264码流解析的步骤就是首先从码流的搜索0x000001和0x00000001，分离出NALU；然后分析NALU的各个字段。</p>
@@ -459,7 +459,7 @@ H.264原始码流(又称为裸流)是一个由一个一个NALU组成的。结构
 <ul>
 <li>原理
 AAC原始码流(称为裸流)是由一个一个的ADTS frame组成的。结构图如下：
-<img src="https://img-blog.csdn.net/20160118101611729" alt="音视频播放过程" /></li>
+<img src="https://zengsansui.github.io/images/ffmpeg/AAC原始码流.jpg" alt="AAC原始码流" /></li>
 </ul>
 
 <p>每个ADTS frame之间通过syncword（同步字）进行分割。同步字为0xFFF（二进制111111111111）.AAC码流解析的步骤首先从码流中搜索0x0FFF,分离出ADTS fram的首部各个字段。</p>
@@ -469,7 +469,7 @@ AAC原始码流(称为裸流)是由一个一个的ADTS frame组成的。结构�
 <ul>
 <li>原理
 FLV封装格式是由一个FLV Header文件头和一个一个的Tag组成的。Tag中包含了音频数据以及视频数据。FLV结构图如下：
-<img src="https://img-blog.csdn.net/20160118103525777" alt="音视频播放过程" /></li>
+<img src="https://zengsansui.github.io/images/ffmpeg/LV封装格式.jpg" alt="LV封装格式" /></li>
 </ul>
 
 <h2 id="udp-rtp协议解析">UDP-RTP协议解析</h2>
@@ -785,7 +785,7 @@ PCM(原始) -&gt; G711
           <div class="row pt-3">
             <div class="col-md-6">
               
-                <a href=https://zengsansui.github.io/test/hugo%E9%83%A8%E7%BD%B2%E5%8F%8A%E4%BD%BF%E7%94%A8/ class="post-meta">
+                <a href=https://zengsansui.github.io/posts/hugo%E9%83%A8%E7%BD%B2%E5%8F%8A%E4%BD%BF%E7%94%A8/ class="post-meta">
                   <div class="pt-2 pb-5 d-flex">
                     <i class="fas fa-angle-left text-grey font-weight-bold mr-2 active-color"></i>
                     <span>Hugo_blog 配置说明</span>
